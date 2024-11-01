@@ -1,1 +1,13 @@
-{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
+{
+    "routes": [
+      {
+        "src": "/build/(.*)",
+        "dest": "/public/build/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/api/index.php"
+      }
+    ]
+  }
+  
